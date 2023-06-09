@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Brian Zhu} \\ \vspace{1pt}
+    \small 317-800-9967 $|$ \href{mailto:zhu1013@purdue.edu}{\underline{zhu1013@purdue.edu}} $|$ 
+    \href{https://linkedin.com/in/bzhu9}{\underline{linkedin.com/in/bzhu9}} $|$
+    \href{https://github.com/bzhu9}{\underline{github.com/bzhu9}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Purdue University}{Aug. 2021 -- May 2025}{Bachelor of Science in Computer Science Honors}{GPA: 3.96}{}
+    \resumeSubSubheading
+      {Bachelor of Science in Mathematics}{}{}
+  \resumeSubHeadingListEnd
+      % {Bachelor of Science in Computer Science}{Aug. 2021 -- May 2024}
+% {Bachelor of Science in Computer Science}{Aug. 2021 -- May 2024}
+
+
+%
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeSubheading
+        {ECELabs}{May 2023 -- Present}
+        {Software Engineering Intern}{West Lafayette, IN}
+        \resumeItemListStart
+            \resumeItem{Developed a platform to simulate field programmable gate arrays and circuitry using CherryPy and Javascript}
+            \resumeItem{Streamed over 50 board simulations for 500+ ECE students with less then 10ms delay}
+            \resumeItem{Integrated software and hardware servers using the Ubuntu system manager and SSH ProxyJump}
+            \resumeItem{Spearheaded the tech stack overhaul by implementing designs in React and documented issues with version control}
+        \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Purdue University, Department of Computer Science}{Aug. 2022 -- Present}
+      {Undergraduate Teaching Assistant}{West Lafayette, IN}
+      \resumeItemListStart
+        \resumeItem{Conducted weekly lab sessions and office hours to teach course material for CS240 (Programming in C)}
+        \resumeItem{Performed code review on lab projects and graded course assignments for 700+ students}
+        \resumeItem{Coordinated with other TA’s and course instructors to align student learning with course goals}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+            {\textbf{Software Entity Recognition Visualizer} $|$ \emph{ReactJS, Python, Natural Language Processing}}{Apr. 2023 -- Present}
+            \resumeItemListStart
+              \resumeItem{Explored a software named entity recognition model at the Human-Centered Software Systems Lab}
+              \resumeItem{Applied noise-robust learning to train and label the model over 1.7M sentences with 79K entities}
+              \resumeItem{Created a REST API to analyze input sentences and categorize 12 different software entities with the model}
+              \resumeItem{Visualized the SER model's entity labeling in a responsive frontend using React}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Chess.com Review Extension} $|$ \emph{Plasmo, Python, Docker, AWS Lambda}}{May 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a chrome web extension to quickly analyze games on Chess.com with Plasmo}
+            \resumeItem{Employed a Computer Aggregated Precision Score algorithm to analyze chess games and scrape users' history}
+            \resumeItem{Maintained an AWS Lambda function to serve the Docker linux containers running a Selenium scraper in Python}
+          \resumeItemListEnd
+        
+        \resumeProjectHeading
+          {\textbf{Odyssey} $|$ \emph{ReactJS, Express.js, Node.js, MongoDB, Python}}{Jan. 2023 -- May 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application to automatically map open classroom routes using the MERN stack}
+            \resumeItem{Implemented an algorithm to create schedules avoiding conflicts with 7000+ school events in 100+ buildings}
+            \resumeItem{Created a REST API to query over 300 classrooms using Express with Mongoose Object-Document Mapping}
+            \resumeItem{Leveraged MongoDB to store users' schedules, while preserving their confidentiality across servers}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{John's Farm} $|$ \emph{Unity, C\#, JavaScript}}{Jan. 2022}
+          \resumeItemListStart
+            \resumeItem{Modeled agricultural economics using Monte Carlo simulations in a web-based Unity puzzle game }
+            \resumeItem{Awarded Best Agricultural Innovation Award by John Deere out of 67 teams at the Boilermake IX hackathon}
+            \resumeItem{Implemented using Unity and C\# and rendered the app using WebGL}
+          \resumeItemListEnd
+          
+    %     \resumeProjectHeading
+    %       {\textbf{Purdue Fantasy} $|$ \emph{Python, Djano, HTML/CSS, JavaScript}}{Sept. 2021}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+    %         \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+    %         \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+    %         \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C/C++, JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: ReactJS, Node.js, Django, MongoDB, Heroku, AWS} \\
+     \textbf{Developer Tools}{: Git, VS Code, PyCharm, IntelliJ, Docker, Google Cloud Platform} \\
+    }}
+ \end{itemize}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+% \section{Awards}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Python, Java, C/C++, JavaScript, HTML/CSS, R} \\
+%      \textbf{Frameworks}{: ReactJS, Node.js, Django, MongoDB, Heroku, AWS} \\
+%      \textbf{Developer Tools}{: Git, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ} \\
+%     }}
+%  \end{itemize}
+
+%-------------------------------------------
+\end{document}
